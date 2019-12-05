@@ -33,6 +33,7 @@ func GetLogger(name string) *log.Logger {
 	}
 
 	logger := log.New()
+	logger.Level = log.DebugLevel
 
 	if logConf != nil {
 
@@ -53,6 +54,10 @@ func GetLogger(name string) *log.Logger {
 				logger.Level = log.TraceLevel
 			} else if strings.EqualFold(logConf.Level, "debug") {
 				logger.Level = log.DebugLevel
+			} else if strings.EqualFold(logConf.Level, "info") {
+				logger.Level = log.InfoLevel
+			} else if strings.EqualFold(logConf.Level, "warn") {
+				logger.Level = log.WarnLevel
 			} else if strings.EqualFold(logConf.Level, "error") {
 				logger.Level = log.ErrorLevel
 			} else if strings.EqualFold(logConf.Level, "fatal") {
