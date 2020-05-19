@@ -1,7 +1,7 @@
 package logging
 
 import (
-	"bitbucket.org/zapr/logging_go/hook"
+	"github.com/zapr-oss/logging_go/hook"
 	"encoding/json"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/natefinch/lumberjack.v2"
