@@ -26,7 +26,7 @@ If you want to use the same file for logging all logs, log object can be passed 
 
 ```json
 {
-  "path": "/home/ubuntu/content-inventory-scripts/ott_content_merger/content_merger/logs/",
+  "path": "/path/to/log/folder/",
   "level": "info",  //getting log level
   "maxSizeInMb": 50,
   "maxBackups": 5,
