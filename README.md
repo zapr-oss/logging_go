@@ -7,14 +7,14 @@ The simplest way to use this package is to import and then get logger by name. I
 package main
 
 import (
-	"bitbucket.org/zapr/logging_go"
+	"github.com/zapr-oss/logging_go"
 	"github.com/sirupsen/logrus"
 	)
 
 var log = logging.GetLogger("handler")
 
 func main() {
-        log.WithError(errr).WithFields(logrus.Fields{
+        log.WithFields(logrus.Fields{
             "name":       "John",
             "id":         10}).
             Errorln("error getting data")
